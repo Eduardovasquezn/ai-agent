@@ -1,0 +1,32 @@
+# Virtual environment
+.venv/
+
+# macOS system files
+.DS_Store
+
+# Git files
+.git/
+
+# VSCode settings
+.vscode/
+*.code-workspace
+
+# Python cache
+*.pyc
+*.pyo
+*.ruff_cache
+*.mypy_cache
+TODO.txt
+
+# Ignore environment files
+.env
+
+# User-specific stuff
+.idea/
+playground/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Logs
+logs/

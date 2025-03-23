@@ -1,0 +1,34 @@
+default:
+  env: "default"
+  app_name: "Postal Service AI Agent"
+  debug: false
+  log_level: "INFO"
+  embedding_model: "BAAI/bge-large-en-v1.5"
+  log_file: "logs/app.log"
+  openai_api_key: "@format {env[OPENAI_API_KEY]}"
+  langfuse_public_key: "@format {env[LANGFUSE_PUBLIC_KEY]}"
+  langfuse_secret_key: "@format {env[LANGFUSE_SECRET_KEY]}"
+  langfuse_host: "@format {env[LANGFUSE_HOST]}"
+  database_url: "@format {env[DATABASE_URL]}"
+
+  qdrant:
+    url: "@format {env[QDRANT_URL]}"
+
+development:
+  env: "development"
+  debug: true
+  database_url: "@format {env[DATABASE_URL]}"
+  model_name: "gpt-4o"
+  qdrant:
+    url: "@format {env[QDRANT_URL]}"
+
+production:
+  env: "production"
+  debug: false
+  database_url: "@format {env[DATABASE_URL]}"
+  model_name: "gpt-4o"
+
+  qdrant:
+    url: "@format {env[QDRANT_URL]}"
+    api_key: "@format {env[QDRANT_API_KEY]}"
+    host: "@format {env[QDRANT_HOST]}"
