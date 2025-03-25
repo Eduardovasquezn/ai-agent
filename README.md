@@ -5,6 +5,8 @@ Postal services handle countless inquiries daily—tracking packages, updating u
 
 This system was built **without relying on any frameworks**, using **pure Python**, making it highly flexible and lightweight.
 
+![Agentic Workflow Diagram](media/diagram.png)
+
 ## 🔥 Features
 - **Automated Query Handling**: Dynamically determines how to process each request.
 - **Package Tracking**: Retrieves real-time tracking data from PostgreSQL.
