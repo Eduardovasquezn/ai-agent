@@ -49,6 +49,12 @@ Copy .env.example to .env and update the necessary values:
 cp .env.example .env
 ```
 
+Start Required Services. \
+The project uses PostgreSQL and Qdrant, which are spun up using Docker Compose. Ensure Docker is installed, then run:
+```bash
+docker compose up -d
+```
+
 Populate the Databases with Fake Data
 ```bash
 python data/fake_data/create_db.py
