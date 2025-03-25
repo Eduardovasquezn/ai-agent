@@ -33,17 +33,17 @@ services:
     volumes:
       - qdrant_data:/qdrant/storage
 
-  app:  # Add FastAPI app service here
-    build: .
-    container_name: fastapi_app
-    restart: always
-    env_file:
-      - .env
-    ports:
-      - "8000:8000"  # Expose FastAPI app on port 8000
-    depends_on:
-      - postgres
-      - qdrant
+  # app:  # Add FastAPI app service here
+  #   build: .
+  #   container_name: fastapi_app
+  #   restart: always
+  #   env_file:
+  #     - .env
+  #   ports:
+  #     - "8000:8000"  # Expose FastAPI app on port 8000
+  #   depends_on:
+  #     - postgres
+  #     - qdrant
 
 volumes:
   postgres_data:
