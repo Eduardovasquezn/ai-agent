@@ -1,4 +1,3 @@
-import os
 import uuid
 
 import qdrant_client
@@ -33,7 +32,7 @@ client_connection.create_collection(
 
 # Load content from the lost_package_policy markdown file
 with open(
-    os.path.join(os.path.dirname(os.getcwd()), "lost_package_policy.md"),
+    "data/lost_package_policy.md",
     "r",
     encoding="utf-8",
 ) as f:
@@ -74,7 +73,7 @@ client_connection.create_collection(
 
 # Load content from the shipping_information markdown file
 with open(
-    os.path.join(os.path.dirname(os.getcwd()), "shipping_information.md"),
+    "data/shipping_information.md",
     "r",
     encoding="utf-8",
 ) as f:
