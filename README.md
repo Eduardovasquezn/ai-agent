@@ -7,6 +7,9 @@ This system was built **without relying on any frameworks**, using **pure Python
 
 ![Agentic Workflow Diagram](media/diagram.png)
 
+You can find the full article explaining this project in detail here: [Read the article](YOUR_ARTICLE_LINK_HERE)
+
+
 ## 🔥 Features
 - **Automated Query Handling**: Dynamically determines how to process each request.
 - **Package Tracking**: Retrieves real-time tracking data from PostgreSQL.
@@ -36,7 +39,7 @@ cd ai-agent
 
 Create & Activate the Virtual Environment with uv
 ```bash
-uv venv
+uv venv --python 3.13
 source .venv/bin/activate
 ```
 
@@ -70,7 +73,7 @@ uvicorn src.core.app:app --host 0.0.0.0 --port 8000 --reload
 
 Run ngrok
 ```bash
-ngrok http 8000 --url={your-domain}/webhook
+ngrok http --url={your-domain} 8000
 ```
 
 ## Support & Contributions
