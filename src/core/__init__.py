@@ -1,3 +1,4 @@
+from .llm_router import llm_router
 from .lost_item_and_shipping_info import retrieve_policy_and_shipping_info
 from .message_classification import route_message_request
 from .process_tracking import process_tracking_package_request
@@ -8,4 +9,5 @@ __all__ = [
     "retrieve_policy_and_shipping_info",
     "route_message_request",
     "update_user_profile",
+    "llm_router",
 ]
