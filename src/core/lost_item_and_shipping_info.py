@@ -135,9 +135,3 @@ def retrieve_policy_and_shipping_info(
     )
 
     return final_completion
-
-
-# Example Usage:
-# input_question = "What should I do if my package is lost?"
-# input_question_2 = "How long does it take to send a package to Economy International? And the price?"
-# policy_answer = retrieve_policy_and_shipping_info(user_input=input_question)

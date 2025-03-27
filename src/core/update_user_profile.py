@@ -91,7 +91,3 @@ def update_user_profile(
         return None
 
     return result
-
-
-# user_input_update_profile = "I would like to update my address to 123 Main Street"
-# update_user_profile(user_input=user_input_update_profile)

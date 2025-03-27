@@ -101,8 +101,3 @@ def process_tracking_package_request(
         return (
             "⚠️ An error occurred while processing your request. Please try again later."
         )
-
-
-# Call function with defined model name
-# response = process_tracking_package_request(user_input="PKG100256")
-# print(response)

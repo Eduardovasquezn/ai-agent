@@ -1,6 +1,6 @@
-from src.utils.clients import get_langfuse_client, get_openai_client
-from src.utils.custom_logging import setup_logging
-from src.utils.db import (
+from .clients import get_langfuse_client, get_openai_client
+from .custom_logging import setup_logging
+from .db import (
     get_interactions_from_db,
     get_latest_tracking_info,
     query_to_update_users_data,

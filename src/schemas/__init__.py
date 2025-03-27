@@ -1,4 +1,4 @@
-from src.schemas.message import (
+from .message import (
     MessageRequestType,
     PolicyCategoryRequest,
     SearchQdrantRequest,

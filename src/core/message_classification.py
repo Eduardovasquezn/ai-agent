@@ -79,8 +79,3 @@ def route_message_request(
     save_interaction_to_db(question=user_input, response=result.description)
 
     return result
-
-
-# status_pacakges_input = "hey, I would like to know the status of my package"
-# first_result = route_message_request(user_input=status_pacakges_input)
-# first_result.description
