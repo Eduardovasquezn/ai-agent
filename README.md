@@ -21,6 +21,7 @@ You can find the full article explaining this project in detail here: [Read the 
 
 ## 🏗️ Tech Stack
 - **AI & LLM**: GPT-4o
+- **Container**: Docker
 - **Database**: PostgreSQL
 - **Vector Search**: Qdrant
 - **API Framework**: FastAPI
